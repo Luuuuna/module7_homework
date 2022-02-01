@@ -2,11 +2,7 @@
 Функция должна возвращать true или false.*/
 
 const lineObj = (str, object) => {
-    if (str in object){
-      return true;
- } else {
-   return false;
- }
+    return str in object;
  }
   
    
@@ -18,4 +14,5 @@ const lineObj = (str, object) => {
  
   console.log(lineObj('name', user));
   console.log(lineObj('age', user));
+ 
  
