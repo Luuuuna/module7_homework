@@ -9,11 +9,14 @@ const person = {
 
 const worker = Object.create(person)
  worker.hometown = "Birmingham";
-function func(worker){
+worker.age = 35;
+worker.name = "Ivan"
 
-for (let key in worker) {
-  if (worker.hasOwnProperty(key))
-  console.log(key)
+function func(obj){
+   for (let key in obj){
+    if (worker.hasOwnProperty(key))
+  console.log(`${key} - ${obj[key]}`);
 }
 }
+
 func(worker);
